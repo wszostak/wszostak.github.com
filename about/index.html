@@ -1,0 +1,20 @@
+---
+layout: default
+title: O nas
+---
+
+<section class="content">
+    <h2>O nas</h2>
+
+    <p>Strona o nas.</p>
+</section>
+
+<ul class="entries">
+    {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url }}">
+                <h3>{{ post.title }}</h3>
+            </a>
+        </li>
+    {% endfor %}
+</ul>

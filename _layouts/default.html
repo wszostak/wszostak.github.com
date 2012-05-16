@@ -1,9 +1,36 @@
 <!doctype html>
 <html>
     <head>
-        <title>{{ page.title }}</title>
+        <meta charset=utf-8 />
+        <title>{% if page.title %} {{ page.title }} | {% endif %} wszostak.pl</title>
+        <link rel="stylesheet" href="/css/style.css" />
     </head>
     <body>
-        {{ content }}
+        <div id="main">
+            <header>
+                <div class="wrapper">
+                    <h1>wszostak.pl</h1>
+                </div>
+            </header>
+
+            <nav role="navigation">
+            <div class="wrapper">
+                <ul>
+                    <li><a href="/">Strona główna</a></li>
+                </ul>
+            </div>
+            </nav>
+
+            <div class="wrapper">
+            {{ content }}
+            </div>
+
+            <footer>
+            <div class="wrapper">
+                <p>&copy; wszostak.pl</p>
+            </div>
+            </footer>
+        </div>
     </body>
+    <!-- {{ site.time }} -->
 </html>

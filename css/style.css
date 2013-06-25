@@ -1,81 +1,10 @@
-body {
-    font: 16px/1.5 verdana, helvetica-neue, helvetica, arial, san-serif;
-    background: black;
-    color: #ececec;
-    padding: 0;
-    margin: 0;
+html, body { height:100%; width:100%; margin:0; border:0; padding:0; background-color: #809336; color: #333; }
+body {background: #809336 url('http://lh6.ggpht.com/_I_jgY6lW2jg/TCH-9fSfceI/AAAAAAAAAmg/arwmcaURjLc/grass-bg.jpg') repeat 0 0; }
+body { display:table; position: relative; }
+body>#center { display:table-cell; vertical-align: middle; }
+/* dla badzIEwia */
+* html #center { position:absolute; height:auto; text-align:center; 
+/* ultrapack by Elus */
+top:expression((x=(document.documentElement.offsetHeight-this.offsetHeight)/2)<0?0:x+'px');
 }
-
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    color: #ccc;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #ececec;
-    text-decoration: underline;
-}
-
-#main {
-    width: 960px;
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.4);
-}
-
-header {
-    padding: 0 10px;
-    overflow: hidden;
-}
-
-h1 {
-    margin: 0;
-}
-
-nav ul, ul.entries {
-    list-style-type: none;
-}
-nav li a {
-    float: left;
-    margin: 5px;
-}
-
-.content {
-    padding: 10px;
-}
-
-ul.entries li {
-    position: relative;
-    margin: 20px auto;
-    padding: 20px;
-    background: #ececec;
-    width: 600px;
-}
-
-ul.entries img {
-    width: 600px;
-}
-
-ul.entries li h3 {
-    position: absolute;
-    bottom: -18px;
-    left: 17px;
-    font-size: 2em;
-}
-
-ul.entries a {
-    color: #ececec;
-}
-
-ul.entries a:hover {
-    color: #fff;
-}
-
-footer {
-    font-size: 0.65em;
-    text-align: center;
-}
+#center h1 { display: block; width: 420px; height: 420px; margin: 0 auto; text-align:center; font-family: IM Fell DW Pica, Georgia, serif; color: #c9d3ab; font-size: 45px; text-shadow: 0 0 .1em #333; }

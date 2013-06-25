@@ -1,37 +1,28 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset=utf-8 />
+	<head>
+		<meta charset="utf-8" />
+
         <title>{% if page.title %} {{ page.title }} | {% endif %} wszostak.pl</title>
-        <link rel="stylesheet" href="/css/style.css" />
-    </head>
-    <body>
-        <div id="main">
-            <header>
-                <div class="wrapper">
-                    <h1>wszostak.pl</h1>
-                </div>
-            </header>
 
-            <nav role="navigation">
-            <div class="wrapper">
-                <ul>
-                    <li><a href="/">Strona główna</a></li>
-                    <li><a href="/about">O nas</a></li>
-                </ul>
-            </div>
-            </nav>
+		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=IM+Fell+DW+Pica">
+		<link type="text/css" rel="stylesheet" media="screen" href="css/index.css" />
 
-            <div class="wrapper">
-            {{ content }}
-            </div>
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-1183416-1']);
+		  _gaq.push(['_trackPageview']);
 
-            <footer>
-            <div class="wrapper">
-                <p>&copy; wszostak.pl</p>
-            </div>
-            </footer>
-        </div>
-    </body>
-    <!-- {{ site.time }} -->
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>	
+	</head>
+
+	<body>
+        {{ content }}
+	</body>
+    <!-- vK: {{ site.time }} -->
 </html>
